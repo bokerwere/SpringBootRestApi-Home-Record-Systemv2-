@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Item category</title>
+<link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+ crossorigin="anonymous">
+<style type="text/css">
+
+body {
+  background-color: lightblue;
+}
+Select{
+display:inline-block;
+width:20px;
+}
+button{
+margin:2px;
+padding:5px
+
+
+
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<div class="container ">
+<h1> Item Category</h1>
+<hr>
+<form action="#" th:action="@{/savaCategory}" th:object="${itemcategory}"  method="post" >
+<label for="category"> Category</label>
+<input type="text" th:field="*{catType}"  class="form-control mb-4 col-3"  id="category">
+
+<button type="submit" class="btn btn-info col-2" >save</button>
+
+  
+</form>
+
+</div>
+
+</body>
+</html>
